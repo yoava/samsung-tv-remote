@@ -31,6 +31,6 @@ cli.command('send-key <key>')
 
 cli.parse(process.argv);
 
-if (process.argv.length) {
+if (!process.argv.length) {
   cli.outputHelp();
 }
