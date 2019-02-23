@@ -25,7 +25,7 @@ cli.command('power-off')
   .action(powerOff);
 
 cli.command('send-key <key>')
-  .alias('send|key')
+  .alias('send')
   .description('send a remote control key to tv')
   .action((key) => sendKey(key));
 
