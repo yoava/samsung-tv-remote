@@ -1,0 +1,17 @@
+{
+  "name": "samsung-tv-remote",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.19.0",
+    "debug": "^4.1.1",
+    "delay": "^4.1.0",
+    "dotenv-flow": "^0.2.0",
+    "node-fetch": "^2.3.0",
+    "samsung-tv-control": "^1.1.1"
+  },
+  "bin": {
+    "samsung-remote": "bin/samsung-remote.js"
+  }
+}
