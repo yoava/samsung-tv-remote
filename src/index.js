@@ -1,13 +1,14 @@
+const path = require('path');
+const cli = require('commander');
 const debug = require('debug')('samsung-remote');
+
 if (process.argv.find(arg => arg === '--debug')) {
   require('debug').enable('samsung-remote,samsung-remote:*');
   debug('debug mode enabled');
 }
 
-require('dotenv-flow').config();
+require('dotenv-flow').config({ cwd: path.join(__dirname, '..') });
 const { sendKey, powerOff, powerOn } = require('./control');
-
-const cli = require('commander');
 
 cli
   .version('0.1.0')
